@@ -197,7 +197,7 @@ hr.light-100{
   
 @media (min-width: 481px) and (max-width: 767px) {
 .carousel-caption {
-    top: 45%;
+    top: 35%;
 }
 .carousel-caption h1{
     font-size: 150%;   
@@ -229,7 +229,7 @@ hr.light-100{
   
 @media (min-width: 320px) and (max-width: 480px) {
 .carousel-caption {
-    top: 30%;
+    top: 50%;
 }
 .carousel-caption h1{
         font-size: 100%;   
