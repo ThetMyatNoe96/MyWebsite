@@ -151,13 +151,19 @@ hr.light-100{
 
 
 /*------Media Queries ----*/
-@media (max-width: 992px){
+@media (min-width: 1025px) and (max-width: 1280px) {
 .social a{
     font-size: 4em;
     padding: 2rem;
+}     
 }
-}
-@media (max-width:768px){
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
 .carousel-caption {
     top: 45%;
 }
@@ -179,33 +185,73 @@ hr.light-100{
 .social a{
     font-size: 2.5em;
     padding: 1.2rem;
+}         
 }
-}
-
-@media (max-width:576px){
+  
+  
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
 .carousel-caption {
-    top: 40%;
+    top: 35%;
 }
 .carousel-caption h1{
-    font-size: 250%;   
+    font-size: 150%;   
 }
 .carousel-caption h3{
-    font-size: 110%;   
+    font-size: 100%;   
 }
 .carousel-caption .btn{
-    font-size: 90%;
-    padding: 4px 8px;
+    font-size: 80%;
+    padding: 3px 6px;
 } 
 .carousel-indicators{
     display: none;
 }  
 .display-4{
-    font-size: 160%;
+    font-size: 130%;
 }
 .social a{
     font-size: 2em;
-    padding: .7rem;
+    padding: .7rem; 
+}     
+    
 }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+.carousel-caption {
+    top: 25%;
+}
+.carousel-caption h1{
+        font-size: 100%;   
+}
+.carousel-caption h3{
+    font-size: 50%;   
+}
+.carousel-caption .btn{
+    font-size: 50%;
+    padding: 2px 4px;
+} 
+.carousel-indicators{
+    display: none;
+}  
+.display-4{
+    font-size: 100%;
+}
+.social a{
+    font-size: 2em;
+    padding: .7rem;  
+}     
+        
 }
 /* Extra small (xs) devices (potrait phones, less than 576px)
 No media query since this is the default in Bootstrap
